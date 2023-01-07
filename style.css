@@ -84,12 +84,7 @@ ul li {
     text-decoration: none;
 }
 
-/*#header_navi ul li a:hover {
-    background-color: rgb(225, 221, 221);
-}*/
-
 .menu-btn1 {
-    text-transform: uppercase;
     text-align: center;
     position: relative;
     text-decoration: none;
@@ -173,11 +168,11 @@ main .contents li.show img {
     position: absolute;
     top: 40px;
 } 
+
 .contents h2{
     font-size: 3rem;
     font-weight: bold;
     white-space: nowrap;
-    background-color: rgba(red, green, blue, alpha);
     padding: 10px 20px;
     line-height: 1.4;
     letter-spacing: .05em;
@@ -186,9 +181,13 @@ main .contents li.show img {
     transform: translateY(20px);
     transition: 1s;
 }
+
+.contentsText h2 a{
+    color: #000;
+}
+
 .contents p{
     line-height: 1.6;
-    /*background-color: rgb(149, 218, 227);*/
     font-size: 1rem;
     max-width: 340px;
     padding: 15px;
@@ -205,6 +204,38 @@ main .contents li.show img {
     opacity: 0;
     transform: translateX(-20px);
     transition: 1s 0.5s;
+}
+
+.textBox {
+    margin: 2em 0;
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+
+.textBox:before,
+.textBox:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;
+}
+
+.textBox:before {
+    left: 10px;
+}
+
+.textBox:after {
+    right: 10px;
+}
+
+.textBox p {
+    margin: 0;
+    padding: 0;
 }
 
 #page-top {
