@@ -127,6 +127,7 @@ main{
 
 .contents li{
     position: relative;
+    list-style: none;
     /*opacity: 0;
     transform: translateY(70px);
     transition: 2s;*/
