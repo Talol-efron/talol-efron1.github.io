@@ -139,6 +139,7 @@ main{
 }*/
 
 .contents li.show h2,
+.contents li.show h3,
 .contents li.show p,
 main .contents li.show img {
     transform: none;
@@ -179,12 +180,11 @@ main .contents li.show img {
     letter-spacing: .05em;
     border-radius: 5px;
     opacity: 0;
-    transform: translateY(20px);
-    transition: 1s;
+    transform: translateX(10rem);
+    transition: 2s;
 }
 
-/*.contents h3{
-    font-size: 1rem;
+.contents h3 {
     font-weight: bold;
     white-space: nowrap;
     padding: 10px 20px;
@@ -193,8 +193,8 @@ main .contents li.show img {
     border-radius: 5px;
     opacity: 0;
     transform: translateY(20px);
-    transition: 1s;
-}*/
+    transition: 1s 0.5s;
+}
 
 .contentsText h2 a{
     color: #000;
@@ -209,15 +209,16 @@ main .contents li.show img {
     border-radius: 5px;
     opacity: 0;
     transform: translateY(20px);
-    transition: 1s;
+    transition: 1s 0.5s;
 }
+
 .contents img{
     width: 50%;
     display: block;
     border-radius: 5px;
     opacity: 0;
     transform: translateX(-20px);
-    transition: 1s 0.5s;
+    transition: 1s 1s;
 }
 
 .textBox {
