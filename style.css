@@ -6,35 +6,23 @@ body {
     color: #333;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-header{
-    padding: 50px;   
+header {
+    padding: 3rem;
 }
 
-header h1{
+header h1 {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 60px;
     white-space: nowrap;
     text-align: center;
 }
-
-/*ul {
-    font-size: 1.3rem;
-    overflow: hidden;
-    margin: 0 auto;
-    list-style: none;
-    text-align: center;
-    z-index: 20;
-}
-
-ul li {
-    display: inline-block;
-    padding: 26px 10px 20px 10px;
-}*/
 
 #header_navi {
     background: white;
@@ -119,19 +107,20 @@ ul li {
     transform: scale(1, 1)
 }
 
-main{
+main {
     max-width: 1000px;
     width: 100%;
     margin: 50px auto;
 }
 
-.contents li{
+.contents li {
     position: relative;
     list-style: none;
     /*opacity: 0;
     transform: translateY(70px);
     transition: 2s;*/
 }
+
 /*
 .contents li.show{
     opacity: 1;
@@ -169,9 +158,9 @@ main .contents li.show img {
     align-items: flex-end;
     position: absolute;
     top: 40px;
-} 
+}
 
-.contents h2{
+.contents h2 {
     font-size: 3rem;
     font-weight: bold;
     white-space: nowrap;
@@ -196,11 +185,11 @@ main .contents li.show img {
     transition: 1s 0.5s;
 }
 
-.contentsText h2 a{
+.contentsText h2 a {
     color: #000;
 }
 
-.contents p{
+.contents p {
     line-height: 1.6;
     font-size: 1rem;
     max-width: 28rem;
@@ -212,7 +201,7 @@ main .contents li.show img {
     transition: 1s 0.5s;
 }
 
-.contents img{
+.contents img {
     width: 45%;
     display: block;
     border-radius: 5px;
