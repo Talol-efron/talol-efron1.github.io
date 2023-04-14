@@ -8,7 +8,9 @@
     <title>Record of books</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <script src="rader-chart.js" defer></script>
+    <script src="chart/bokuai.js" defer></script>
+    <script src="chart/driver.js" defer></script>
+    <script src="chart/tegami.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 </head>
 
@@ -50,9 +52,7 @@
                         対する考えが一変したわたなべは、その女性と今までとは異なる一夜を過ごして
                         物語は終わる。
                     </p>
-                    <canvas id="myRadarChart">
-                        <div id="sample" data-text="4 ,1, 5, 3, 5"></div>
-                    </canvas>
+                    <canvas id="bokuaiChart"></canvas>
                 </div>
             </li>
 
@@ -72,9 +72,7 @@
                         考え方が書かれており、修一のストーリーを交えながら運を貯める方法、運を使う
                         方法を教えてくれる良書。
                     </p>
-                    <canvas class="myRadarChart">
-                        <div class="sample" data-text="4 ,1, 5, 3, 5"></div>
-                    </canvas>
+                    <canvas id="driverChart"></canvas>
                 </div>
             </li>
 
@@ -103,6 +101,7 @@
                         自分が船長か船員か、船は大きいか小さいかなんて、実はどうでもいい。
                         大事なのは、その船が何を目的として航海するか、だ。
                     </p>
+                    <canvas id="tegamiChart"></canvas>
                 </div>
             </li>
 

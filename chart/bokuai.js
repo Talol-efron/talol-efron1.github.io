@@ -1,9 +1,9 @@
-var sample = document.getElementById('sample');
-var array = sample.dataset.text.split(',');
-var intArray = array.map(Number);
-//sampleではなく他の
+//var chart = document.getElementById("chart");
+//var array = chart.dataset.text.split(',');
+//var intArray = array.map(Number);
 
-var ctx = document.getElementById("myRadarChart");
+var ctx = document.getElementById("bokuaiChart");
+
 var myRadarChart = new Chart(ctx, {
     //グラフの種類
     type: 'radar',
@@ -30,7 +30,7 @@ var myRadarChart = new Chart(ctx, {
             //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
             hitRadius: 5,
             //グラフのデータ
-            data: intArray
+            data: [4,1,5,3,5],
             }
         ]
     },
