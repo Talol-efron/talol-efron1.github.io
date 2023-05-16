@@ -1,0 +1,24 @@
+#list {
+    display: flex;
+    justify-content: center;
+}
+
+.entity {
+    width: 100%;
+    height: 100%;
+}
+
+.entity:nth-child(2) {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.entity:nth-child(3) {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.picture img {
+    width: 90%;
+    height: 90%;
+}

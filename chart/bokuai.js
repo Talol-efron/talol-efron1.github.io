@@ -1,7 +1,3 @@
-//var chart = document.getElementById("chart");
-//var array = chart.dataset.text.split(',');
-//var intArray = array.map(Number);
-
 var ctx = document.getElementById("bokuaiChart");
 
 var myRadarChart = new Chart(ctx, {
