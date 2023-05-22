@@ -1,4 +1,6 @@
 TODO:
+jsを用いて、book_listを並べる
+- 4つ並んだら折り返し、アニメーションで登場仕様。
 
 movieもbook同様のUIに
 グラフの位置、sizeを統一
