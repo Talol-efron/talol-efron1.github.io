@@ -1,6 +1,8 @@
-#list {
+.list {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .entity {
@@ -21,4 +23,12 @@
 .picture img {
     width: 90%;
     height: 90%;
+}
+
+.list .entity {
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    list-style: none;
 }
