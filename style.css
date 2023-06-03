@@ -406,6 +406,10 @@ main .contents li.show img {
         margin-top: 0.5rem;
     }
 
+    .animationTargetList.show {
+        margin-top: 0.5rem;
+    }
+
     .contents li:not(:first-of-type) {
         margin-top: 200px;
     }
