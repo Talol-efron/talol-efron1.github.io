@@ -9,6 +9,27 @@
     <link rel="stylesheet" href="list.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <style>
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    
+        .list .entity {
+            flex-basis: calc(25% - 10px);
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        }
+
+        .list .entity:hover {
+            box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25), 0px 10px 10px rgba(0, 0, 0, 0.22);
+            transform: translateY(-10px);
+}
+    </style>
 </head>
 
 <body>
