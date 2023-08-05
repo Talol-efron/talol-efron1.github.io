@@ -17,10 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(showPictures, 1000); // Wait for 1 second before starting to show pictures
 
     document.addEventListener("scroll", function () {
+        const targetElement = document.querySelectorAll('.animationTarget');
         for (let i = 0; i < targetElement.length; i++) {
-            const getElementDistance = targetElement[i].getBoundingClientRect().top + targetElement[i].clientHeight * 0.6
+            const getElementDistance = targetElement[i].getBoundingClientRect().top + targetElement[i].clientHeight * 0.6;
             if (window.innerHeight > getElementDistance) {
-                targetElement[i].classList.add("show")
+                targetElement[i].classList.add("show");
             }
         }
     });
