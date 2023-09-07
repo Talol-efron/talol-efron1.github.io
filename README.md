@@ -2,4 +2,3 @@
 - book_html/hoge.html
 - chart/hoge.js
 - book_list.html
-
