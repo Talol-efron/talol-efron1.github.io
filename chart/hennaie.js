@@ -1,4 +1,4 @@
-var ctx = document.getElementById("hennnaieChart");
+var ctx = document.getElementById("hennaieChart");
 
 var myRadarChart = new Chart(ctx, {
     //グラフの種類
