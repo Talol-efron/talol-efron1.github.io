@@ -25,7 +25,7 @@ var driverChart = new Chart(ctx, {
                 //結合点より外でマウスホバーを認識する範囲（ピクセル単位）
                 hitRadius: 5,
                 //グラフのデータ
-                data: [2, 1, 2, 4, 2],
+                data: [2, 1, 2, 3, 2],
             }
         ]
     },
