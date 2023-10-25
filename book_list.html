@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="list.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
     <style>
         .list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: flex-start;
+            /* 左端から詰める */
         }
     
         .list .entity {
@@ -21,14 +23,21 @@
             height: auto;
             object-fit: cover;
             margin-bottom: 20px;
+            margin-right: 10px;
+            /* 各アイテムの右側に10pxの余白を追加します */
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
-            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
         }
-
+    
+        .list .entity:last-child {
+            margin-right: 0;
+            /* 最後のアイテムは右の余白を0にします */
+        }
+    
         .list .entity:hover {
             box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25), 0px 10px 10px rgba(0, 0, 0, 0.22);
             transform: translateY(-10px);
-}
+        }
     </style>
 </head>
 
@@ -46,46 +55,10 @@
     </header>
     <main>
         <h2>My Library</h2>
-        <ul class="list">
-            <div class="entity">
-                <div class="picture">
-                    <a href="book_html/hennaie.html"><img src="https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/hennaie.jpg?raw=true" alt=""></a>
-                </div>
-            </div>
-            <div class="entity">
-                <div class="picture">
-                    <a href="book_html/konbini.html"><img src="https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/konbini.jpg?raw=true" alt=""></a>
-                </div>
-            </div>
-            <div class="entity">
-                <div class="picture">
-                    <a href="book_html/bokuai.html"><img src="https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/bokuai.jpg?raw=true" alt=""></a>
-                </div>
-            </div>
-            <div class="entity">
-                <div class="picture">
-                    <a href="book_html/driver.html"><img src="https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/Driver.jpg?raw=true" alt=""></a>
-                </div>
-            </div>
-            <div class="entity">
-                <div class="picture">
-                    <a href="book_html/tegami.html"><img src="https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/Tegami.jpg?raw=true" alt=""></a>
-                </div>
-            </div>
-            <div class="entity">
-                <div class="picture">
-                    <a href="book_html/time_limit.html"><img src="https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/time_limit.jpg?raw=true" alt=""></a>
-                </div>
-            </div>
-            <div class="entity">
-                <div class="picture">
-                    <a href="book_html/think_experiment.html"><img src="https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/think_experiment.jpg?raw=true" alt=""></a>
-                </div>
-            </div>
-        </ul>
+        <ul class="list"></ul>
+        <script src="createEntity.js"></script>
     </main>
     <footer>
-
     </footer>
 </body>
 </html>
