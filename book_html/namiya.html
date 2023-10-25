@@ -8,7 +8,6 @@
     <title>Record of books</title>
     <link rel="stylesheet" href="../style.css">
     <script src="../script.js" defer></script>
-    <script src="../chart/namiya.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 </head>
 
@@ -31,7 +30,7 @@
             <li class="animationTarget">
                 <img src="https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/namiya.jpg?raw=true"
                     alt="" style="padding-top: 12rem;">
-                <canvas id="namiyaChart"></canvas>
+                <canvas id="chart"></canvas>
                 <div class="contentsText">
                     <h2><a href="https://www.amazon.co.jp/%E3%83%8A%E3%83%9F%E3%83%A4%E9%9B%91%E8%B2%A8%E5%BA%97%E3%81%AE%E5%A5%87%E8%B9%9F-%E8%A7%92%E5%B7%9D%E6%96%87%E5%BA%AB-%E6%9D%B1%E9%87%8E-%E5%9C%AD%E5%90%BE-ebook/dp/B086YT8NR6/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr="
                             class="menu-btn1" target="_blank">ナミヤ雑貨店の奇蹟</a></h2>
@@ -50,6 +49,12 @@
                 </div>
             </li>
         </ul>
+        <script src="../evalChart.js"></script>
+        <script>
+            var id = document.getElementById("chart");
+            var bookData = [4, 2, 4, 2, 4];
+            var chart = BookEvaluationChart(id, bookData);
+        </script>
     </main>
 
     <footer>
