@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record of books</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Witty</h1>
+        <nav id="header_navi">
+            <ul>
+                <li><a href="../" class="menu-btn1">Home</a></li>
+                <li><a href="../book_list.html" class="menu-btn1">Book</a></li>
+                <li><a href="../movie.html" class="menu-btn1">Movie</a></li>
+                <li><a href="../place.html" class="menu-btn1">Place</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>読んだ本の備忘録</h2>
+        <ul class="contents">
+            <li class="animationTarget">
+                <img src="https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/die_with_zero.jpg?raw=true"
+                    alt="" style="padding-top: 12rem;">
+                <canvas id="Chart"></canvas>
+                <div class="contentsText">
+                    <h2><a href="https://www.amazon.co.jp/DIE-ZERO-%E4%BA%BA%E7%94%9F%E3%81%8C%E8%B1%8A%E3%81%8B%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%99%E3%81%8E%E3%82%8B%E7%A9%B6%E6%A5%B5%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB-%E3%83%93%E3%83%AB%E3%83%BB%E3%83%91%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B9-ebook/dp/B08K88Z2XR/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1703044780&sr=8-1" class="menu-btn1"
+                            target="_blank">DIE WITH ZERO ~人生が豊かになりすぎる究極のルール~</a></h2>
+                    <h3>Bill Perkins(著)</h3>
+                    <p>
+                        DIE WITH ZEROとは、全ての財産を死ぬまでに使い切ることである。
+                        この本では、死ぬまでに財産を使い切ることで得られるメリット、財産を使い切るための方法が紹介されている。
+                        この本を読んで若いうちにたくさん経験に投資しようと思った。体力、感性が20歳と80歳では異なることから、
+                        お金の価値も異なる。同じサービスや経験をしても、20歳の方がより価値を感じることができる。
+                        金額✖️(寿命-年齢) = 価値のような方程式がどこかに存在してそうだなーと思った。
+                        また、人生のあらゆるフェーズで経験をするために、体力とお金を考慮したタイムバケットを作成した。
+                        若いうちは5年ごとに設計しているので、5年ごとに設計を見直して、残りの人生で経験したいことを全てできるようにしたい。
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <script src="../evalChart.js"></script>
+        <script>
+            var id = document.getElementById("Chart");
+            var bookData = [4, 4, 3, 5, 4];
+            var chart = BookEvaluationChart(id, bookData);
+        </script>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
