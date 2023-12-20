@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record of books</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Witty</h1>
+        <nav id="header_navi">
+            <ul>
+                <li><a href="../" class="menu-btn1">Home</a></li>
+                <li><a href="../book_list.html" class="menu-btn1">Book</a></li>
+                <li><a href="../movie.html" class="menu-btn1">Movie</a></li>
+                <li><a href="../place.html" class="menu-btn1">Place</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>読んだ本の備忘録</h2>
+        <ul class="contents">
+            <li class="animationTarget">
+                <img src="https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/courage_disliked.jpg?raw=true"
+                    alt="" style="padding-top: 12rem;">
+                <canvas id="Chart"></canvas>
+                <div class="contentsText">
+                    <h2><a href="https://www.amazon.co.jp/%E5%AB%8C%E3%82%8F%E3%82%8C%E3%82%8B%E5%8B%87%E6%B0%97%E2%80%95%E2%80%95%E2%80%95%E8%87%AA%E5%B7%B1%E5%95%93%E7%99%BA%E3%81%AE%E6%BA%90%E6%B5%81%E3%80%8C%E3%82%A2%E3%83%89%E3%83%A9%E3%83%BC%E3%80%8D%E3%81%AE%E6%95%99%E3%81%88-%E5%B2%B8%E8%A6%8B-%E4%B8%80%E9%83%8E/dp/4478025819" class="menu-btn1"
+                            target="_blank">嫌われる勇気</a></h2>
+                    <h3>岸見一郎, 古賀史健(著)</h3>
+                    <p>
+                        この本は、哲人と青年の対話形式でアドラーの教えを説いている。
+                        アドラーは全ての悩みは対人関係にあり、これを克服することで自分の人生を歩むことができると説いている。
+                        第一夜では、「トラウマ」の存在を否定し、トラウマがあるから~~できないのではなく、~~したくないからトラウマを持ち出している
+                        という目的論について語られている。
+                        第三夜では、「承認欲求」を否定している。この章がタイトルにある「嫌われる勇気」に一番結びついていると感じた。
+                        他人にどう思われるかを気にしていたら、自分の人生を歩めない。それこそ、自己中心的な考え方である。
+                        第五夜では、共同体感覚に必要な三要素、「自己受容」「他者信頼」「他者貢献」について語られている。
+                        これら三つは循環しており、幸福の正体を"貢献感"にむすびつけている。また、この章のタイトルが『「いま、ここ」を真剣に生きる』であり、
+                        個人的には一番心に響いた章であった。
+                        なんとなく、この本が自己啓発の源流と言われる理由がわかった気がした。最後に、私が心に残ったフレーズを引用して〆たいと思う。
+                    </p>
+                    <p>「完結した刹那を、ダンスするように生きる」</p>
+                </div>
+            </li>
+        </ul>
+        <script src="../evalChart.js"></script>
+        <script>
+            var id = document.getElementById("Chart");
+            var bookData = [4, 3, 4, 5, 2];
+            var chart = BookEvaluationChart(id, bookData);
+        </script>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
