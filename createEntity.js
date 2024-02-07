@@ -20,7 +20,8 @@ const books = [
     { url: "book_html/time_limit.html", imageUrl: "https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/time_limit.jpg?raw=true"  },
     { url: "book_html/think_experiment.html", imageUrl: "https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/think_experiment.jpg?raw=true" },
     { url: "book_html/die_with_zero.html", imageUrl: "https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/die_with_zero.jpg?raw=true"},
-    { url: "book_html/courage_disliked.html", imageUrl: "https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/courage_disliked.jpg?raw=true" }
+    { url: "book_html/courage_disliked.html", imageUrl: "https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/courage_disliked.jpg?raw=true" },
+    { url: "book_html/keyence.html", imageUrl: "https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/keyence.jpg?raw=true" }
 
 ];
 

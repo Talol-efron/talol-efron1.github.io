@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record of books</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Witty</h1>
+        <nav id="header_navi">
+            <ul>
+                <li><a href="../" class="menu-btn1">Home</a></li>
+                <li><a href="../book_list.html" class="menu-btn1">Book</a></li>
+                <li><a href="../movie.html" class="menu-btn1">Movie</a></li>
+                <li><a href="../place.html" class="menu-btn1">Place</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>読んだ本の備忘録</h2>
+        <ul class="contents">
+            <li class="animationTarget">
+                <img src="https://github.com/Talol-efron/talol-efron1.github.io/blob/master/book_img/keyence.jpg?raw=true"
+                    alt="" style="padding-top: 12rem;">
+                <canvas id="Chart"></canvas>
+                <div class="contentsText">
+                    <h2><a href="https://www.amazon.co.jp/%E3%82%AD%E3%83%BC%E3%82%A8%E3%83%B3%E3%82%B9%E8%A7%A3%E5%89%96-%E6%9C%80%E5%BC%B7%E4%BC%81%E6%A5%AD%E3%81%AE%E3%83%A1%E3%82%AB%E3%83%8B%E3%82%BA%E3%83%A0-%E8%A5%BF%E5%B2%A1-%E6%9D%8F/dp/4296200917/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=" class="menu-btn1"
+                            target="_blank">キーエンス解剖</a></h2>
+                    <h3>西岡 杏(著)</h3>
+                    <p>
+                        時価総額5位のキーエンス。平均年収は2200万円、営業利益率は脅威の55%。
+                        営業利益率が55%と聞いて、同じような製品を扱っている他社から購入することで、コストが抑えられる。
+                        なぜ、敢えて営業利益率55%もの高い企業から高い製品を購入するのか。この本を読むまでは分からなかった。
+                        キーエンスの特長として、業界初の製品が多いこと、発注した製品を即納すること、サポート体制が大変手厚いことが挙げられる。
+                        これは、キーエンスを外部から見た特長である。この特長を実現するには、どのような組織が必要か。
+                        それを実現している組織の構造が詰められた本である。例えば、キーエンスは「性弱説」に基づいており、日報を1分単位で書かなければならない。
+                        他にも、賞与は個人レベルではなく、会社レベルであり、以外にも個人の業績で給与の全てが決まるわけではないそうだ。
+                        僕も、年収2200万円に惹かれてキーエンスを受けたが、一次面接で落ちた。。。面接官を説得する面接だった。いい思い出。
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <script src="../evalChart.js"></script>
+        <script>
+            var id = document.getElementById("Chart");
+            var bookData = [4, 3, 5, 5, 4];
+            var chart = BookEvaluationChart(id, bookData);
+        </script>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
